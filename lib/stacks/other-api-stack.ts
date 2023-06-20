@@ -19,7 +19,7 @@ export class OtherApiStack extends cdk.Stack {
 
     // The code that defines your stack goes here
     const handler = new lambda.Function(this, 'Lambda', {
-      runtime: lambda.Runtime.NODEJS_14_X,
+      runtime: lambda.Runtime.NODEJS_16_X,
       handler: 'handler.handler',
       code: lambda.Code.fromAsset(path.resolve(__dirname, 'lambda')),
     });

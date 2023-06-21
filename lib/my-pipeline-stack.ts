@@ -1,5 +1,6 @@
-import { Construct, SecretValue, Stack, StackProps } from '@aws-cdk/core';
-import { CodePipeline, CodePipelineSource, ShellStep } from "@aws-cdk/pipelines";
+import { Construct } from 'constructs';
+import { SecretValue, Stack, StackProps } from 'aws-cdk-lib';
+import { CodePipeline, CodePipelineSource, ShellStep } from "aws-cdk-lib/pipelines";
 import { OtherApiStage } from './stages/other-api-stage';
 import { AmplifyStage } from './stages/amplify-stage';
 

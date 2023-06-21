@@ -1,11 +1,11 @@
 {
-  "stackName": "amplify-mytodoapp-dev-84837",
+  "stackName": "amplify-mytodoapp-dev-135337",
   "props": {
     "templateFile": "root-stack-template.json",
     "parameters": {
-      "AuthRoleName": "amplify-mytodoapp-dev-84837-authRole",
-      "UnauthRoleName": "amplify-mytodoapp-dev-84837-unauthRole",
-      "DeploymentBucketName": "amplify-mytodoapp-dev-84837-deployment"
+      "AuthRoleName": "amplify-mytodoapp-dev-135337-authRole",
+      "UnauthRoleName": "amplify-mytodoapp-dev-135337-unauthRole",
+      "DeploymentBucketName": "amplify-mytodoapp-dev-135337-deployment"
     },
     "preserveLogicalIds": true,
     "loadNestedStacks": {
@@ -15,7 +15,7 @@
           "AppSyncApiName": "mytodoapp",
           "DynamoDBBillingMode": "PAY_PER_REQUEST",
           "DynamoDBEnableServerSideEncryption": false,
-          "S3DeploymentBucket": "amplify-mytodoapp-dev-84837-deployment",
+          "S3DeploymentBucket": "amplify-mytodoapp-dev-135337-deployment",
           "S3DeploymentRootKey": "amplify-appsync-files/db3a6dadb9a21c6ed3c12a262ee49755e4594311",
           "env": "dev"
         },
@@ -32,56 +32,6 @@
             "loadNestedStacks": {}
           }
         }
-      },
-      "authmytodoappc989e7d4": {
-        "templateFile": "auth/mytodoappc989e7d4/mytodoappc989e7d4-cloudformation-template.json",
-        "parameters": {
-          "identityPoolName": "mytodoappc989e7d4_identitypool_c989e7d4",
-          "allowUnauthenticatedIdentities": false,
-          "resourceNameTruncated": "mytodoc989e7d4",
-          "userPoolName": "mytodoappc989e7d4_userpool_c989e7d4",
-          "autoVerifiedAttributes": [
-            "email"
-          ],
-          "mfaConfiguration": "OFF",
-          "mfaTypes": [
-            "SMS Text Message"
-          ],
-          "smsAuthenticationMessage": "Your authentication code is {####}",
-          "smsVerificationMessage": "Your verification code is {####}",
-          "emailVerificationSubject": "Your verification code",
-          "emailVerificationMessage": "Your verification code is {####}",
-          "defaultPasswordPolicy": false,
-          "passwordPolicyMinLength": 8,
-          "passwordPolicyCharacters": [],
-          "requiredAttributes": [
-            "email"
-          ],
-          "aliasAttributes": [],
-          "userpoolClientGenerateSecret": false,
-          "userpoolClientRefreshTokenValidity": 30,
-          "userpoolClientWriteAttributes": [
-            "email"
-          ],
-          "userpoolClientReadAttributes": [
-            "email"
-          ],
-          "userpoolClientLambdaRole": "mytodoc989e7d4_userpoolclient_lambda_role",
-          "userpoolClientSetAttributes": false,
-          "sharedId": "c989e7d4",
-          "resourceName": "mytodoappc989e7d4",
-          "authSelections": "identityPoolAndUserPool",
-          "useDefault": "default",
-          "userPoolGroupList": [],
-          "serviceName": "Cognito",
-          "usernameCaseSensitive": false,
-          "useEnabledMfas": true,
-          "breakCircularDependency": true,
-          "dependsOn": [],
-          "env": "dev"
-        },
-        "preserveLogicalIds": true,
-        "loadNestedStacks": {}
       }
     }
   }
